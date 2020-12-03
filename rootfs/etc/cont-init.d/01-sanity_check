@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+#shellcheck shell=bash
+
+if [ -z "$DUMP978_HOST" ]; then
+	echo "DUMP978_HOST not set. EXITING"
+	exit 1
+fi
