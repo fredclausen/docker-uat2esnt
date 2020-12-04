@@ -7,7 +7,6 @@ This container runs a copy of uat2esnt that can be used to convert [dump978](htt
 ## Supported tags and respective Dockerfiles
 
 * `latest` (`master` branch, `Dockerfile`)
-* `latest_nfm` (`master` branch, `Dockerfile.NFM`. See [NFM](#nfm) below)
 
 ## Multi Architecture Support
 
