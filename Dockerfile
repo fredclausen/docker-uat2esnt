@@ -5,6 +5,8 @@ ENV BRANCH_RTLSDR="ed0317e6a58c098874ac58b769cf2e609c18d9a5" \
     URL_REPO_UAT2ESNT="https://github.com/adsbxchange/uat2esnt.git" \
     DUMP978_HOST=""
 
+COPY rootfs/ /
+
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 RUN set -x && \
@@ -58,7 +60,5 @@ RUN set -x && \
     apt-get remove -y ${TEMP_PACKAGES[@]} && \
     apt-get autoremove -y && \
     rm -rf /src/* /tmp/* /var/lib/apt/lists/* 
-
-COPY rootfs/ /
 
 ENTRYPOINT [ "/init" ]
