@@ -29,14 +29,14 @@ RUN set -x && \
     TEMP_PACKAGES+=(ca-certificates) && \
     # dump978 dependencies
     TEMP_PACKAGES+=(libboost-dev) && \
-    TEMP_PACKAGES+=(libboost-system) && \
-    KEPT_PACKAGES+=(libboost-system) && \
-    TEMP_PACKAGES+=(libboost-program-options) && \
-    KEPT_PACKAGES+=(libboost-program-options) && \
-    TEMP_PACKAGES+=(libboost-regex) && \
-    KEPT_PACKAGES+=(libboost-regex) && \
-    TEMP_PACKAGES+=(libboost-filesystem) && \
-    KEPT_PACKAGES+=(libboost-filesystem) && \
+    TEMP_PACKAGES+=(libboost-system1.74-dev) && \
+    KEPT_PACKAGES+=(libboost-system1.74.0) && \
+    TEMP_PACKAGES+=(libboost-program-options1.74-dev) && \
+    KEPT_PACKAGES+=(libboost-program-options1.74.0) && \
+    TEMP_PACKAGES+=(libboost-regex1.74-dev) && \
+    KEPT_PACKAGES+=(libboost-regex1.74.0) && \
+    TEMP_PACKAGES+=(libboost-filesystem1.74-dev) && \
+    KEPT_PACKAGES+=(libboost-filesystem1.74.0) && \
     # uat2esnt dependencies (+ telegraf)
     KEPT_PACKAGES+=(socat) && \
     # install first round of packages
